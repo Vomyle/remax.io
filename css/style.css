@@ -862,17 +862,203 @@
   background-color: rgba(139, 30, 30, 0.651);
 }
 
-.body .video iframe {
-  height: 400px;
+.body .container {
   width: 100%;
-  background-image: url("https://thecoffeevn.com/wp-content/uploads/2019/02/coffee-shop.jpg");
+  padding: 0;
+  position: relative;
 }
 
-.body .video iframe .html5-video-player a {
+.body .container img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.body .container i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 41px;
+  color: white;
+}
+
+.body .container i:hover {
+  color: #e4c307;
+  cursor: pointer;
+}
+
+.body .container .modal {
+  padding: 0 20px !important;
+}
+
+.body .container .modal .modal-dialog {
+  width: 100%;
+}
+
+.body .container .modal .modal-dialog iframe {
+  height: 350px;
+  width: 100%;
+}
+
+.body .promotional-news {
+  padding: 0 105px;
+}
+
+.body .promotional-news .title-promotional_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  padding: 0 12px;
+}
+
+.body .promotional-news .title-promotional_news .hollow {
+  border-top: 1px solid;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.body .promotional-news .title-promotional_news .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.body .promotional-news .slick-img_news img {
+  width: 100%;
+  height: 240px;
+}
+
+.body .promotional-news .slick-img_news .slick-prev {
+  display: block;
+  position: absolute;
+  top: 10px;
+  color: black;
+  display: none !important;
+  z-index: 999;
+  display: block;
+  top: 110px;
+  width: 44px;
+  height: 42px;
+  left: -10px;
+  border-radius: 50%;
+}
+
+.body .promotional-news .slick-img_news .slick-next {
+  display: block;
+  position: absolute;
+  top: 10px;
+  color: black;
+  right: -10px;
+  z-index: 999;
+  display: none !important;
+  display: block;
+  top: 110px;
+  width: 44px;
+  height: 42px;
+  border-radius: 50%;
   display: none;
 }
 
-.body .video #movie_player div.ytp-chrome-top.ytp-show-cards-title div.ytp-title div a {
-  display: none;
+.body .promotional-news .slick-img_news h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.body .promotional-news .slick-img_news .hollow {
+  border-top: 2px solid;
+  width: 51px;
+  margin: 10px 0;
+}
+
+.body .promotional-news .slick-img_news .slick-slide {
+  display: block;
+  padding: 0 10px;
+}
+
+.body .promotional-news .slick-img_news button:hover {
+  background-color: #e4c307;
+}
+
+.body .promotional-news .slick-img_news:hover button {
+  display: inline-block !important;
+  cursor: pointer;
+}
+
+.footer .child-footer {
+  padding: 20px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #241414;
+}
+
+.footer .connect-fanpage,
+.footer .address,
+.footer .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .connect-fanpage h5,
+.footer .address h5,
+.footer .map h5 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.footer .connect-fanpage .hollow,
+.footer .address .hollow,
+.footer .map .hollow {
+  border-top: 2px solid white;
+  width: 38px;
+  margin: 15px 0;
+}
+
+.footer .connect-fanpage .img-footer {
+  width: 286px;
+  height: 150px;
+}
+
+.footer .connect-fanpage button {
+  position: absolute;
+  top: 66px;
+  left: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer .connect-fanpage .text-connect_fanpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  color: white;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

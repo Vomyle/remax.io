@@ -658,19 +658,161 @@
             background-color: rgba(139, 30, 30, 0.651);
         }
     }
-    .video {
-        iframe {
-            height: 400px;
+    .container {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        img {
             width: 100%;
-            background-image: url("https://thecoffeevn.com/wp-content/uploads/2019/02/coffee-shop.jpg");
-            .html5-video-player {
-                a {
-                    display: none;
+            height: 400px;
+            object-fit: fill;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 41px;
+            color: white;
+        }
+        i:hover {
+            color: #e4c307;
+            cursor: pointer;
+        }
+        .modal {
+            padding: 0 20px!important;
+            .modal-dialog {
+                width: 100%;
+                iframe {
+                    height: 350px;
+                    width: 100%;
                 }
             }
         }
-        #movie_player div.ytp-chrome-top.ytp-show-cards-title div.ytp-title div a {
-            display: none;
+    }
+    .promotional-news {
+        padding: 0 105px;
+        .title-promotional_news {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 30px 0;
+            padding: 0 12px;
+            .hollow {
+                border-top: 1px solid;
+                flex: 1;
+            }
+            .title {
+                flex: 1;
+                padding: 0 10px;
+                font-size: 27px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        .slick-img_news {
+            img {
+                width: 100%;
+                height: 240px;
+            }
+            .slick-prev {
+                display: block;
+                position: absolute;
+                top: 10px;
+                color: black;
+                display: none !important;
+                z-index: 999;
+                display: block;
+                top: 110px;
+                width: 44px;
+                height: 42px;
+                left: -10px;
+                border-radius: 50%;
+            }
+            .slick-next {
+                display: block;
+                position: absolute;
+                top: 10px;
+                color: black;
+                right: -10px;
+                z-index: 999;
+                display: none!important;
+                display: block;
+                top: 110px;
+                width: 44px;
+                height: 42px;
+                border-radius: 50%;
+                display: none;
+            }
+            h5 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .hollow {
+                border-top: 2px solid;
+                width: 51px;
+                margin: 10px 0;
+            }
+            .slick-slide {
+                display: block;
+                padding: 0 10px;
+            }
+            button:hover {
+                background-color: #e4c307;
+            }
+        }
+        .slick-img_news:hover button {
+            display: inline-block !important;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    .child-footer {
+        padding: 20px 150px;
+        display: flex;
+        background-color: #241414;
+    }
+    .connect-fanpage,
+    .address,
+    .map {
+        flex: 1;
+        // text-align: center;
+        // align-items: center;
+        display: flex;
+        flex-direction: column;
+        h5 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 700;
+            font-size: 17px;
+        }
+        .hollow {
+            border-top: 2px solid white;
+            width: 38px;
+            margin: 15px 0;
+        }
+    }
+    .connect-fanpage {
+        .img-footer {
+            width: 286px;
+            height: 150px;
+        }
+        button {
+            position: absolute;
+            top: 66px;
+            left: 12px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .text-connect_fanpage {
+            display: flex;
+            position: absolute;
+            top: 7px;
+            left: 13px;
+            color: white;
+            display: flex;
         }
     }
 }

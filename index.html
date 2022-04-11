@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-1.8.1/slick-1.8.1/slick/slick.css" /> -->
     <!-- <link rel="stylesheet" href="css/slick-1.8.1/slick-1.8.1/slick/slick.min.js"> -->
@@ -335,10 +338,145 @@
 
         </div>
 
-        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/S19VyDGF0N8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container">
+
+            <img src="img/cafe.jpg" alt="">
+            <i class="fa-solid fa-circle-play" class="modal-title" data-toggle="modal" data-target="#myModal"></i>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://www.youtube.com/embed/AGx7OIlhI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- promotional news: tin tức khuyến mãi -->
+        <div class="promotional-news">
+            <div class="title-promotional_news">
+                <div class="hollow"></div>
+                <div class="title">tin tức khuyến mãi</div>
+                <div class="hollow"></div>
+            </div>
+            <div>
+                <div style="display: flex;" class="slick-img_news">
+
+                    <div>
+                        <img src="img/khaitruong.jpg" alt="">
+                        <div style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="">TƯNG BỪNG KHAI TRƯƠNG</h5>
+                            <div class="hollow"></div>
+                            <p class="">Như đã hẹn, đúng 6g 30 phút sáng nay, THE [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/khaitruong.jpeg" alt="">
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class=" ">THE COFFEE VN: Sẵn sàng cho ngày khai trương</h5>
+                            <div class="hollow"></div>
+                            <p class=" ">Ngày mai, 28/7/2019 THE COFFEE VN chính thức khai trương [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/nuocep.jpg" alt="">
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="post-title is-large ">GIẢM GIÁ 50% CHO TẤT CẢ CÁC LOẠI ĐỒ UỐNG</h5>
+                            <div class="hollow"></div>
+                            <p class="">Tận hưởng thỏa thê tất cả các loại đồ [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/tracamdao.jpg" alt="">
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="post-title is-large ">TRÀ CAM ĐÀO</h5>
+                            <div class="hollow"></div>
+                            <p class="">Như đã hẹn, đúng 6g 30 phút sáng nay, THE [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/CAFEDEN.jpg" alt="">
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="">CÀ PHÊ ĐÁ</h5>
+                            <div class="hollow"></div>
+                            <p class="">28.000 đồng/size M 36.000 đồng/size L Đến trực tiếp THE [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/CAFESUA.jpg" alt="">
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="">cà phê sữa đá THE COFEE VN</h5>
+                            <div class="hollow"></div>
+                            <p class="from_the_blog_excerpt ">28.000 đồng/size M 36.000 đồng/size L Kết hợp hoàn hảo [...] </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
-
+    <div class="footer">
+        <div class="child-footer">
+            <div class="connect-fanpage">
+                <h5>kết nối fanpage</h5>
+                <div class="hollow"></div>
+                <div style="position: relative;">
+                    <img src="img/chantrang.jpg" alt="" class="img-footer">
+                    <div class="text-connect_fanpage">
+                        <img src="img/logochantrang.jpg" alt="">
+                        <div>
+                            <div>the coffee.vn</div>
+                            <div>3.730 lượt thích</div>
+                        </div>
+                    </div>
+                    <button><i class="fa-brands fa-facebook-square"></i> Thích Trang</button>
+                </div>
+            </div>
+            <div class="address">
+                <h5>địa chỉ liên hệ</h5>
+                <div class="hollow"></div>
+                <div style="color: white;
+                font-size: 18px;"><strong style="text-transform:uppercase">địa chỉ: </strong>34-36 Vũ Tông Phan, An Phú, quận 2,TPHCM</div>
+                <div><strong style="text-transform:uppercase; color: white;">hotline: </strong>
+                    <a href="tel:039 9999 789" type="tel" style="color: white;">039 9999 789</a>
+                </div>
+                <div style="color: white;
+                font-size: 18px;"><strong style="  text-transform:uppercase">Email: </strong>info@thecoffevn.com</div>
+            </div>
+            <div class="map">
+                <h5>bản đồ</h5>
+                <div class="hollow"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.004192365782!2d106.66500641428672!3d10.734159562908856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e4fabf2626b%3A0x456ad6f2f684de59!2zMTEwNyBQaOG6oW0gVGjhur8gSGnhu4NuLCBQaMaw4budbmcgNSwgUXXhuq1uIDgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1649579239073!5m2!1svi!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div></div>
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -371,6 +509,15 @@
             $(".img-somethingcoffee").slick({
                 dots: true,
 
+            });
+        })
+        $(document).ready(function() {
+            $(".slick-img_news").slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' ></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>"
             });
         })
     </script>
