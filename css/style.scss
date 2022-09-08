@@ -31,17 +31,79 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .close {
+            display: none;
+            font-size: 25px;
+            position: absolute;
+            right: 23px;
+            top: 13px;
+            color: white;
+            opacity: 1;
+            &.active {
+                display: flex;
+            }
+        }
         img {
             width: 250px;
         }
         ul {
+            #mobile-menu {
+                font-size: 20px;
+                color: black;
+                display: none;
+                @media (min-width: 740px) and(max-width: 1023px) {
+                    display: block;
+                }
+            }
             display: flex;
+            @media (min-width: 740px) and(max-width: 1023px) {
+                position: absolute;
+                left: -20px;
+                // font-size: 23px;
+                color: burlywood;
+            }
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+            }
+            .bar {
+                @media(min-width: 1024px) {
+                    display: flex;
+                    font-size: 17px;
+                }
+                display: none;
+                &.active {
+                    display: flex !important;
+                    background: cadetblue;
+                    color: black;
+                }
+                @media (min-width: 740px) and(max-width: 1023px) {
+                    position: absolute;
+                    background-color: black;
+                    left: 20px;
+                    padding: 40px 20px;
+                    color: white;
+                    top: -44px;
+                    z-index: 111;
+                    flex-direction: column;
+                }
+            }
             li {
                 padding: 0 20px;
                 list-style: none;
                 text-transform: uppercase;
                 font-weight: 700;
                 height: 27px;
+                @media(min-width: 740px) and (max-width: 1023px) {
+                    width: 159px;
+                    padding: 17px;
+                    font-size: 16px;
+                }
                 .table-of_content:hover {
                     border-bottom: 2px solid #e4c307;
                     cursor: pointer;
@@ -262,6 +324,9 @@
                 text-transform: uppercase;
                 font-weight: 600;
                 flex: 1;
+                @media(min-width: 740px) and(max-width: 1023px) {
+                    flex: 3;
+                }
             }
             .hollow {
                 border-top: 1px solid;
@@ -297,6 +362,9 @@
         .row {
             padding: 0 80px;
             margin: 0;
+            @media (min-width: 740px) and (max-width: 1023px) {
+                padding: 0;
+            }
         }
     }
     .product-hot {
@@ -307,6 +375,9 @@
         .hollow {
             flex: 2;
             border-top: 1px solid rgb(211, 209, 209);
+            @media(min-width: 740px) and (max-width: 1023px) {
+                flex: 1;
+            }
         }
         .title-product_hot {
             text-transform: uppercase;
@@ -324,6 +395,9 @@
         .slick-img_product {
             img {
                 width: 83% !important;
+                @media (min-width: 740px) and (max-width: 1023px) {
+                    width: 97% !important;
+                }
                 height: 550px;
                 padding: 50px 0;
             }
@@ -360,12 +434,18 @@
         }
         .coffeeandbread {
             padding: 0 105px 50px 105px;
+            @media(min-width: 740px) and(max-width: 1023px) {
+                padding: 12px;
+            }
             img {
                 width: 100%;
                 height: 320px;
                 padding: 10px 0;
             }
             .col-md-3 {
+                @media(min-width: 740px) and (max-width: 1023px) {
+                    padding: 0;
+                }
                 .text-bread {
                     justify-content: center;
                     text-align: center;
@@ -500,6 +580,9 @@
     .somethingabout-coffee {
         padding: 30px 105px;
         margin: 0;
+        @media(min-width: 740px) and(max-width: 1023px) {
+            padding: 30px 73px;
+        }
         img:hover .slick-next {
             display: block !important;
         }
@@ -577,6 +660,9 @@
     .position-coffee {
         padding: 30px 105px;
         margin: 0;
+        @media(min-width: 740px) and(max-width: 1023px) {
+            padding: 30px 73px;
+        }
         img:hover .slick-next {
             display: block !important;
         }
@@ -585,6 +671,9 @@
         }
         .slick-dots {
             left: 30%;
+            @media(min-width: 740px) and (max-width: 1023px) {
+                left: 15%;
+            }
         }
         .slick-prev {
             position: absolute;
@@ -679,7 +768,7 @@
             cursor: pointer;
         }
         .modal {
-            padding: 0 20px!important;
+            padding: 0 20px !important;
             .modal-dialog {
                 width: 100%;
                 iframe {
@@ -690,7 +779,7 @@
         }
     }
     .promotional-news {
-        padding: 0 105px;
+        // padding: 0 105px;
         .title-promotional_news {
             display: flex;
             justify-content: center;
@@ -736,7 +825,7 @@
                 color: black;
                 right: -10px;
                 z-index: 999;
-                display: none!important;
+                display: none !important;
                 display: block;
                 top: 110px;
                 width: 44px;
@@ -773,6 +862,12 @@
         padding: 20px 150px;
         display: flex;
         background-color: #241414;
+        @media(min-width: 740px) and (max-width: 1023px) {
+            padding: 20px 30px;
+        }
+    }
+    .address {
+        padding-left: 10px;
     }
     .connect-fanpage,
     .address,
@@ -792,6 +887,9 @@
             border-top: 2px solid white;
             width: 38px;
             margin: 15px 0;
+        }
+        iframe {
+            width: 100%;
         }
     }
     .connect-fanpage {

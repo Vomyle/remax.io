@@ -37,41 +37,46 @@
             </div>
         </div>
         <div class="header-bottom">
+            <i class="close fa-solid fa-xmark"></i>
             <img src="img/logo1.png" alt="">
             <ul>
+                <i id="mobile-menu" class="fa-solid fa-bars"></i>
                 <!-- Table of contents:mục lục -->
-                <li>
-                    <div class="table-of_content"> trang chủ</div>
-                </li>
-                <li>
-                    <div class="table-of_content introduce"> giới thiệu
-                        <!-- labrary: thư viện -->
-                        <div class="library">thư viện
-                            <div class="library-child">
-                                <div class="text-img">hình ảnh</div>
-                                <div class="text-youtube">video</div>
+
+                <div class="bar">
+                    <li>
+                        <div class="table-of_content"> trang chủ</div>
+                    </li>
+                    <li>
+                        <div class="table-of_content introduce"> giới thiệu
+                            <!-- labrary: thư viện -->
+                            <div class="library">thư viện
+                                <div class="library-child">
+                                    <div class="text-img">hình ảnh</div>
+                                    <div class="text-youtube">video</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="table-of_content">menu</div>
-                </li>
-                <li>
-                    <div class="table-of_content">khuyến mãi</div>
-                </li>
-                <li>
-                    <div class="table-of_content">tuyển dụng</div>
-                </li>
-                <li>
-                    <!-- job story:chuyện nghề -->
-                    <div class="table-of_content job-story">chuyện nghề
-                        <div class="library">hướng dẫn</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="table-of_content">chuyện hot</div>
-                </li>
+                    </li>
+                    <li>
+                        <div class="table-of_content">menu</div>
+                    </li>
+                    <li>
+                        <div class="table-of_content">khuyến mãi</div>
+                    </li>
+                    <li>
+                        <div class="table-of_content">tuyển dụng</div>
+                    </li>
+                    <li>
+                        <!-- job story:chuyện nghề -->
+                        <div class="table-of_content job-story">chuyện nghề
+                            <div class="library">hướng dẫn</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="table-of_content">chuyện hot</div>
+                    </li>
+                </div>
             </ul>
         </div>
     </div>
@@ -150,7 +155,7 @@
         </div>
         <!-- product hot: sản phẩm hot -->
         <div class="product-hot">
-            <div style="    display: flex;
+            <div style="display: flex;
             align-items: center;">
                 <div class="hollow"></div>
                 <div class="title-product_hot">sản phẩm hot</div>
@@ -489,14 +494,11 @@
                 prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' ></i></button>",
                 nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>"
             })
-
         });
     </script>
     <script>
         $(document).ready(function() {
-            $(".img-to").slick({
-
-            });
+            $(".img-to").slick();
         });
     </script>
     <script>
@@ -520,6 +522,22 @@
                 nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>"
             });
         })
+    </script>
+    <script>
+        var menu = document.querySelector('#mobile-menu');
+        const menuList = document.querySelector(".bar");
+        var close = document.querySelector(".close");
+        console.log(menu)
+        menu.onclick = function() {
+            menuList.classList.add("active")
+            close.classList.add("active")
+        }
+        close.onclick = function() {
+            close.classList.remove("active")
+
+
+            menuList.classList.remove("active")
+        }
     </script>
 
 </body>
