@@ -480,15 +480,26 @@
             .img-food {
                 justify-content: center;
                 .text-food {
+                    @media(max-width: 425px) {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                    }
                     h3 {
                         text-transform: uppercase;
                         font-size: 2em;
                         color: white;
+                        @media(max-width: 425px) {
+                            font-size: 22px;
+                        }
                     }
                     p {
                         width: 620px;
                         color: #f1f1f1;
                         font-size: 18px;
+                        @media(max-width: 425px) {
+                            width: 350px;
+                        }
                     }
                     a {
                         text-transform: uppercase;
