@@ -20,6 +20,12 @@
     <!-- <link rel="stylesheet" href="css/slick-1.8.1/slick-1.8.1/slick/slick.min.js"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-1.8.1/slick-1.8.1/slick/slick-theme.css" /> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="owl.carousel.js">
+    <link rel="stylesheet" href="owl.carousel.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -168,10 +174,12 @@
                     <div style="position: absolute;
                     top: 191px; text-align:center">
                         <div class="text-food">
-                            <h3 class="uppercase"><strong>chocolate lemon mouse </strong></h3>
-                            <p>Vị ngon khó cưỡng với vị chanh, chocolate mang phong cách ẩm thực Pháp tại THE COFFEE VN.</p>
-                            <p style="margin: 20px">Giá ưu đãi: 20.000 đồng</p>
-                            <a href="" class="btn btn-primary">xem thêm</a>
+                            <div>
+                                <h3 class="uppercase"><strong>chocolate lemon mouse </strong></h3>
+                                <p>Vị ngon khó cưỡng với vị chanh, chocolate mang phong cách ẩm thực Pháp tại THE COFFEE VN.</p>
+                                <p style="margin: 20px">Giá ưu đãi: 20.000 đồng</p>
+                                <a href="" class="btn btn-primary">xem thêm</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +198,8 @@
 
             </div>
             <!-- bread:bánh mì -->
-            <div class="row coffeeandbread">
+            <!-- lỗi -->
+            <div class="row coffeeandbread" style="overflow: hidden;">
                 <div class="col-md-3" style="position: relative;">
                     <img src="img/bánh mì.jpg" alt="">
                     <div class="text-bread">
@@ -200,7 +209,7 @@
                             <a href="" class="btn btn-outline-white">xem thêm</a>
                         </div>
                     </div>
-                    <img src="img/cach-lam-tra-dao-cam-sa-uong-ngay.webp" alt="">
+                    <img src="img/thu-vien-anh-dep-voi-8-353-tam-anh-chat-luong-cao-ve-ly-tra-dao-tuyet-dep-cho-in-an-thiet-ke-3.jpg" alt="">
                     <!-- korean-peachtea: trà đào hàn quốc -->
 
                     <div class="text-korean_peachtea">
@@ -222,7 +231,7 @@
                         <h3>bánh mì bò kho</h3>
                         <a href="" class="btn btn-outline-white">xem thêm</a>
                     </div>
-                    <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                    <img src="img/ca-phe-sua-da.jpg" alt="">
                     <div class="text-korean_peachtea">
                         <h3>affoga vani</h3>
                         <a href="" class="btn btn-outline-white">xem thêm</a>
@@ -440,12 +449,80 @@
                         </div>
                     </div>
                 </div>
+                <div style="display: flex;" class="slick-img_newsmobile">
+
+                    <div>
+                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+
+                        <div style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="">TƯNG BỪNG KHAI TRƯƠNG</h5>
+                            <div class="hollow"></div>
+                            <p class="">Như đã hẹn, đúng 6g 30 phút sáng nay, THE [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class=" ">THE COFFEE VN: Sẵn sàng cho ngày khai trương</h5>
+                            <div class="hollow"></div>
+                            <p class=" ">Ngày mai, 28/7/2019 THE COFFEE VN chính thức khai trương [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="post-title is-large ">GIẢM GIÁ 50% CHO TẤT CẢ CÁC LOẠI ĐỒ UỐNG</h5>
+                            <div class="hollow"></div>
+                            <p class="">Tận hưởng thỏa thê tất cả các loại đồ [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="post-title is-large ">TRÀ CAM ĐÀO</h5>
+                            <div class="hollow"></div>
+                            <p class="">Như đã hẹn, đúng 6g 30 phút sáng nay, THE [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="">CÀ PHÊ ĐÁ</h5>
+                            <div class="hollow"></div>
+                            <p class="">28.000 đồng/size M 36.000 đồng/size L Đến trực tiếp THE [...] </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <div class="" style="text-align: center; align-items: center;
+                        display: flex;
+                        flex-direction: column;">
+                            <h5 class="">cà phê sữa đá THE COFEE VN</h5>
+                            <div class="hollow"></div>
+                            <p class="from_the_blog_excerpt ">28.000 đồng/size M 36.000 đồng/size L Kết hợp hoàn hảo [...] </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" style=>
         <div class="child-footer">
             <div class="connect-fanpage">
                 <h5>kết nối fanpage</h5>
@@ -513,7 +590,12 @@
 
             });
         })
+
         $(document).ready(function() {
+            $('.slick-img_newsmobile').slick({
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' ></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>"
+            });
 
             $(".slick-img_news").slick({
                 // infinite: true,
