@@ -1397,9 +1397,7 @@
 
 @media (max-width: 425px) {
   .body .promotional-news .slick-img_newsmobile {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: block !important;
   }
 }
 
