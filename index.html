@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -38,10 +38,11 @@
                 <i class="fa-solid fa-envelope"></i>
             </div>
         </div>
+
         <div class="header-bottom">
-            <i class="close fa-solid fa-xmark"></i>
-            <img src="img/logo1.png" alt="">
-            <ul>
+            <!-- <i class="close fa-solid fa-xmark"></i> -->
+            <img src="assets/img/logo1.png" alt="">
+            <ul class="nav-pc">
                 <i id="mobile-menu" class="fa-solid fa-bars"></i>
                 <!-- Table of contents:mục lục -->
 
@@ -81,10 +82,67 @@
                 </div>
             </ul>
         </div>
+        <div class="hollow"></div>
+        <input type="checkbox" hidden name="" class="nav-input" id="nav-input">
+        <label for="nav-input" class="nav">                <i id="mobile-menu" class="fa-solid fa-bars"></i>
+            </label>
+        <label for="nav-input" class="nav-overlay">
+             
+                    <i class="close fa-solid fa-xmark"></i>
+                    
+            </label>
+
+        <ul class="nav_mobile">
+            <div>
+                <div id="input-search">
+                    <input type="text" placeholder="Tìm kiếm.....">
+
+
+                    <i class="search fas fa-search"></i>
+                </div>
+            </div>
+            <div class="bar">
+                <li>
+                    <div class="table-of_content"> trang chủ</div>
+                </li>
+                <li>
+                    <div class="table-of_content introduce"> giới thiệu
+                        <!-- labrary: thư viện -->
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="table-of_content">menu</div>
+                </li>
+                <li>
+                    <div class="table-of_content">khuyến mãi</div>
+                </li>
+                <li>
+                    <div class="table-of_content">tuyển dụng</div>
+                </li>
+                <li>
+                    <!-- job story:chuyện nghề -->
+                    <div class="table-of_content job-story">chuyện nghề
+                    </div>
+                </li class="table-of_content">
+                <li>
+                    <div class="library">sản phẩm hot</div>
+
+                </li>
+                <li>
+                    <div class="table-of_content">đăng nhập</div>
+                </li>
+            </div>
+        </ul>
+        <!-- Table of contents:mục lục -->
+
+
+
+    </div>
     </div>
     <div class="body">
         <div class="img">
-            <div class="hover-img"> <img src="img/hinh-anh-cafe-dep.jpg" alt="hinh1">
+            <div class="hover-img"> <img src="assets/img/hinh-anh-cafe-dep.jpg" alt="hinh1">
                 <div class="text-hover_img">
                     <div class="text-hover_imgchild">
                         <h3 class="uppercase">ĐÔI ĐIỀU VỀ THE COFFEE VN</h3>
@@ -94,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hover-img"><img src="img/f881ad2778cc7d7c88791e14c9419b52.jpg" alt="hinh2">
+            <div class="hover-img"><img src="assets/img/f881ad2778cc7d7c88791e14c9419b52.jpg" alt="hinh2">
                 <div class="text-hover_imgsecond">
                     <h3>phòng họp giá 0 đồng</h3>
                     <!-- customer-benefits:lợi ích khách hàng -->
@@ -104,7 +162,7 @@
                     <strong>Do đó The Coffee VN đã ra mắt chương trình ” PHÒNG HỌP GIÁ 0 ĐỒNG ” .</strong>
                 </div>
             </div>
-            <div class="hover-img"><img src="img/lovepik-coffee-beans-picture_500688001.jpg" alt="hinh3">
+            <div class="hover-img"><img src="assets/img/lovepik-coffee-beans-picture_500688001.jpg" alt="hinh3">
                 <div class="text-hover_img">
                     <div class="text-hover_imgchild">
                         <h3 class="uppercase">Cafe Espresso pha máy</h3>
@@ -114,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hover-img"><img src="img/istockphoto-523167980-612x612.jpg.crdownload" alt="hinh4">
+            <div class="hover-img"><img src="assets/img/istockphoto-523167980-612x612.jpg.crdownload" alt="hinh4">
                 <div class="text-hover_img">
                     <div class="text-hover_imgchild">
                         <h3 class="uppercase">Cà phê sữa đá</h3>
@@ -135,19 +193,19 @@
             <div class="row introduce-coffee">
                 <div class="col-sm-4">
                     <div>
-                        <img src="img/cofee.png" alt="">
+                        <img src="assets/img/cofee.png" alt="">
                     </div>
                     <h3>THỨC UỐNG NGON, RẺ…</h3>
                     <p>Đến với <strong>THE COFFEE VN</strong>, quý khách có những trải nghiệm thú vị từ hơn 40 loại đồ uống và 20 loại bánh được phục vụ trên tiêu chí: Ngon – Rẻ – Chất lượng và Phong phú! Ngoài cà phê sữa đá và cà phê đá là hai loại thức
                         uống được chọn lựa từ những hạt cà phê sạch…</p>
                     <a href="">Xem thêm </a>
                 </div>
-                <div class="col-sm-4"><img src="img/banner2.png" alt="">
+                <div class="col-sm-4"><img src="assets/img/banner2.png" alt="">
                     <h3>PHỤC VỤ TỐT, DỄ THƯƠNG</h3>
                     <p>Xem khách hàng là ân nhân, đội ngũ phục vụ của THE COFFEE VN luôn lấy sự hài lòng của quý khách là niềm hạnh phúc của mình! Được tuyển chọn từ các bạn trẻ năng động, yêu công việc phục vụ, nhân viên của THE COFFEE VN…</p>
                     <a>Xem thêm</a>
                 </div>
-                <div class="col-sm-4"><img src="img/hình1.png" alt="">
+                <div class="col-sm-4"><img src="assets/img/hình1.png" alt="">
                     <h4>VỊ TRÍ ĐẸP, THUẬN TIỆN</h4>
                     <p>Cách cầu Sài Gòn khoảng 2 km, đường Vũ Tông Phan là “khu phố văn phòng” nổi trội của quận 2, với sự có mặt của Cục thuế TP.HCM, các trường học và nhiều doanh nghiệp lớn. Trong đô thị năng động đó, THE COFFEE VN ra đời…</p>
                     <a href="">Xem thêm </a>
@@ -166,7 +224,7 @@
             <div class="slick-img_product img-to">
 
                 <div class="img-food">
-                    <img src="img/banh-chocolate-lava-dep-mat-600x337.webp" alt="">
+                    <img src="assets/img/banh-chocolate-lava-dep-mat-600x337.webp" alt="">
                     <div style="position: absolute;
                     top: 191px; text-align:center">
                         <div class="text-food">
@@ -180,7 +238,7 @@
                     </div>
                 </div>
                 <div class="img-food">
-                    <img src="img/foody-upload-api-foody-mobile-the-coffee-house-190105114517.jpg" alt="">
+                    <img src="assets/img/foody-upload-api-foody-mobile-the-coffee-house-190105114517.jpg" alt="">
                     <div style="position: absolute;
                     top: 191px; text-align:center">
                         <div class="text-food">
@@ -197,7 +255,7 @@
             <!-- lỗi -->
             <div class="row coffeeandbread" style="overflow: hidden;">
                 <div class="col-md-3" style="position: relative;">
-                    <img src="img/bánh mì.jpg" alt="">
+                    <img src="assets/img/bánh mì.jpg" alt="">
                     <div class="text-bread">
                         <div>
                             <h2 class="uppercase">BÁNH MÌ BÒ ÚC NƯỚNG</h2>
@@ -205,7 +263,7 @@
                             <a href="" class="btn btn-outline-white">xem thêm</a>
                         </div>
                     </div>
-                    <img src="img/thu-vien-anh-dep-voi-8-353-tam-anh-chat-luong-cao-ve-ly-tra-dao-tuyet-dep-cho-in-an-thiet-ke-3.jpg" alt="">
+                    <img src="assets/img/thu-vien-anh-dep-voi-8-353-tam-anh-chat-luong-cao-ve-ly-tra-dao-tuyet-dep-cho-in-an-thiet-ke-3.jpg" alt="">
                     <!-- korean-peachtea: trà đào hàn quốc -->
 
                     <div class="text-korean_peachtea">
@@ -214,20 +272,20 @@
                     </div>
 
                 </div>
-                <div class="col-md-6"><img src="img/cafeda.jpg" alt="">
+                <div class="col-md-6"><img src="assets/img/cafeda.jpg" alt="">
                     <div class="text-korean_peachtea">
                         <h3>black cofee</h3>
                         <a href="" class="btn btn-outline-white">xem thêm</a>
                     </div>
                 </div>
                 <div class="col-md-3 ">
-                    <img src="img/mon-bo-kho-banh-my-thom-ngon.jpg" alt="">
+                    <img src="assets/img/mon-bo-kho-banh-my-thom-ngon.jpg" alt="">
                     <!-- beef-soupbreak:bánh mì bò kho -->
                     <div class="beef-soupbreak">
                         <h3>bánh mì bò kho</h3>
                         <a href="" class="btn btn-outline-white">xem thêm</a>
                     </div>
-                    <img src="img/ca-phe-sua-da.jpg" alt="">
+                    <img src="assets/img/ca-phe-sua-da.jpg" alt="">
                     <div class="text-korean_peachtea">
                         <h3>affoga vani</h3>
                         <a href="" class="btn btn-outline-white">xem thêm</a>
@@ -301,9 +359,9 @@
 
         <div class="row somethingabout-coffee">
             <div class="col-xs-6 img-somethingcoffee">
-                <img src="img/nhanvien.jpg" alt="">
-                <img src="img/hinh.jpg" alt="">
-                <img src="img/quan.jpg" alt="">
+                <img src="assets/img/nhanvien.jpg" alt="">
+                <img src="assets/img/hinh.jpg" alt="">
+                <img src="assets/img/quan.jpg" alt="">
             </div>
             <div class="col-xs-6">
                 <div class="title-img_somethingcoffee">
@@ -337,12 +395,12 @@
                 <a href="" class="btn"> <i class="fa-solid fa-heart"></i>xem thêm ></a>
             </div>
             <div class="col-xs-6 img-somethingcoffee">
-                <img src="img/thecoffe.jpg" alt="">
-                <img src="img/khachhang.jpg" alt="">
-                <img src="img/nhanvienvaquay.jpg" alt="">
-                <img src="img/hainhanvien.jpg" alt="">
-                <img src="img/quancoffee.jpg" alt="">
-                <img src="img/quantoi.png" alt="">
+                <img src="assets/img/thecoffe.jpg" alt="">
+                <img src="assets/img/khachhang.jpg" alt="">
+                <img src="assets/img/nhanvienvaquay.jpg" alt="">
+                <img src="assets/img/hainhanvien.jpg" alt="">
+                <img src="assets/img/quancoffee.jpg" alt="">
+                <img src="assets/img/quantoi.png" alt="">
             </div>
 
 
@@ -350,7 +408,7 @@
 
         <div class="container">
 
-            <img src="img/cafe.jpg" alt="">
+            <img src="assets/img/cafe.jpg" alt="">
             <i class="fa-solid fa-circle-play" class="modal-title" data-toggle="modal" data-target="#myModal"></i>
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog">
@@ -385,7 +443,7 @@
                 <div style="display: flex;" class="slick-img_news">
 
                     <div>
-                        <img src="img/khaitruong.jpg" alt="">
+                        <img src="assets/img/khaitruong.jpg" alt="">
                         <div style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -395,7 +453,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/khaitruong.jpeg" alt="">
+                        <img src="assets/img/khaitruong.jpeg" alt="">
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -405,7 +463,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/nuocep.jpg" alt="">
+                        <img src="assets/img/nuocep.jpg" alt="">
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -415,7 +473,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/tracamdao.jpg" alt="">
+                        <img src="assets/img/tracamdao.jpg" alt="">
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -425,7 +483,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/CAFEDEN.jpg" alt="">
+                        <img src="assets/img/CAFEDEN.jpg" alt="">
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -435,7 +493,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/CAFESUA.jpg" alt="">
+                        <img src="assets/img/CAFESUA.jpg" alt="">
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -448,7 +506,7 @@
                 <div style="display: flex;" class="slick-img_newsmobile">
 
                     <div>
-                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <img src="assets/img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
 
                         <div style="text-align: center; align-items: center;
                         display: flex;
@@ -459,7 +517,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <img src="assets/img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
 
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
@@ -470,7 +528,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <img src="assets/img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
 
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
@@ -481,7 +539,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <img src="assets/img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
 
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
@@ -492,7 +550,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <img src="assets/img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
 
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
@@ -503,7 +561,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
+                        <img src="assets/img/bac-siu_13856adaa2354499aa61251b8b1e9fd6_master-1024x1024.jpg" alt="">
                         <div class="" style="text-align: center; align-items: center;
                         display: flex;
                         flex-direction: column;">
@@ -524,9 +582,9 @@
                 <h5>kết nối fanpage</h5>
                 <div class="hollow"></div>
                 <div style="position: relative;">
-                    <img src="img/chantrang.jpg" alt="" class="img-footer">
+                    <img src="assets/img/chantrang.jpg" alt="" class="img-footer">
                     <div class="text-connect_fanpage">
-                        <img src="img/logochantrang.jpg" alt="">
+                        <img src="assets/img/logochantrang.jpg" alt="">
                         <div>
                             <div>the coffee.vn</div>
                             <div>3.730 lượt thích</div>
@@ -602,7 +660,7 @@
             });
         })
     </script>
-    <script>
+    <!-- <script>
         var menu = document.querySelector('#mobile-menu');
         const menuList = document.querySelector(".bar");
         var close = document.querySelector(".close");
@@ -617,6 +675,6 @@
 
             menuList.classList.remove("active")
         }
-    </script>
+    </script> -->
 
 </body>
