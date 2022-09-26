@@ -102,28 +102,11 @@
      object-fit: contain;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   #header .header-bottom img {
     position: absolute;
     z-index: 99;
     top: 32px;
-    height: 89px;
-  }
-}
-
-@media (min-width: 540px) and (max-width: 720px) {
-  #header .header-bottom img {
-    position: absolute;
-    top: 29px;
-    z-index: 999;
-  }
-}
-
-@media (max-width: 425px) {
-  #header .header-bottom img {
-    z-index: 99;
-    top: 30px;
-    position: absolute;
   }
 }
 
@@ -1227,15 +1210,6 @@
   }
 }
 
-@media (min-width: 540px) and (max-width: 720px) {
-  .body .somethingabout-coffee {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 @media (max-width: 767px) {
   .body .somethingabout-coffee {
     padding: 0;
@@ -1248,6 +1222,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1261,7 +1239,7 @@
   }
 }
 
-@media (min-width: 540px) and (max-width: 720px) {
+@media (max-width: 767px) {
   .body .somethingabout-coffee .col-xs-6 {
     width: 100%;
     padding: 16px !important;
@@ -1388,6 +1366,10 @@
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1403,13 +1385,7 @@
   }
 }
 
-@media (min-width: 540px) and (max-width: 720px) {
-  .body .position-coffee .col-xs-6 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 767px) {
   .body .position-coffee .col-xs-6 {
     width: 100%;
   }
@@ -1628,7 +1604,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 849px) {
   .body .promotional-news .slick-img_news {
     display: none !important;
   }
@@ -1694,13 +1670,13 @@
   padding: 0 20px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 849px) {
   .body .promotional-news .slick-img_newsmobile {
     display: block !important;
   }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 849px) {
   .body .promotional-news .slick-img_newsmobile {
     display: none !important;
   }

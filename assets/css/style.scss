@@ -72,21 +72,11 @@
         img {
             width: 220px;
             object-fit: contain;
-            @media(min-width: 768px)and(max-width: 1023px) {
+            @media(max-width: 1023px) {
                 position: absolute;
                 z-index: 99;
                 top: 32px;
-                height: 89px;
-            }
-            @media(min-width:540px) and(max-width:720px) {
-                position: absolute;
-                top: 29px;
-                z-index: 999;
-            }
-            @media(max-width:425px) {
-                z-index: 99;
-                top: 30px;
-                position: absolute;
+                // height: 89px;
             }
         }
         .nav-pc {
@@ -885,22 +875,24 @@
         @media(min-width: 740px) and(max-width: 1023px) {
             padding: 30px 34px;
         }
-        @media(min-width:540px) and(max-width:720px) {
-            text-align: center;
-            align-items: center;
-        }
+        // @media(min-width:540px) and(max-width:720px) {
+        //     text-align: center;
+        //     align-items: center;
+        // }
         @media(max-width:767px) {
             padding: 0;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            text-align: center;
+            align-items: center;
         }
         .col-xs-6 {
             padding: 8px !important;
             @media(min-width: 740px) and(max-width: 1023px) {
                 padding: 11px !important;
             }
-            @media(min-width: 540px) and(max-width: 720px) {
+            @media(max-width:767px) {
                 width: 100%;
                 padding: 16px !important;
             }
@@ -992,16 +984,15 @@
         @media(max-width:767px) {
             display: flex;
             padding: 0;
+            text-align: center;
+            align-items: center;
             flex-direction: column;
         }
         @media(min-width:540px) and(max-width:720px) {
             align-items: center;
         }
         .col-xs-6 {
-            @media(min-width: 540px) and(max-width: 720px) {
-                width: 100%;
-            }
-            @media(max-width: 425px) {
+            @media(max-width: 767px) {
                 width: 100%;
             }
         }
@@ -1156,7 +1147,7 @@
             @media(min-width: 740px) and(max-width: 1023px) {
                 padding: 0 10px;
             }
-            @media(max-width:425px) {
+            @media(max-width:849px) {
                 display: none !important;
             }
             img {
@@ -1212,10 +1203,10 @@
         .slick-img_newsmobile {
             // display: none !important;
             padding: 0 20px;
-            @media(max-width: 425px) {
+            @media(max-width: 849px) {
                 display: block !important;
             }
-            @media(min-width: 426px) {
+            @media(min-width: 849px) {
                 display: none !important;
             }
             .slick-prev {
