@@ -160,7 +160,7 @@
     position: fixed;
     top: 30px;
     left: 0px;
-    background-color: black;
+    background: black;
     padding: 76px 41px;
     color: white;
     z-index: 111;
@@ -377,15 +377,15 @@
   position: absolute;
   top: 0px;
   right: 23px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header .nav_mobile li {
@@ -416,9 +416,9 @@
 
 #header .close {
   position: absolute;
+  z-index: 99;
   top: 0;
   right: 20px;
-  z-index: 99;
   font-size: 30px;
   color: white;
   opacity: 1;
@@ -494,8 +494,8 @@
 
 .body .img .slick-prev {
   position: absolute;
+  z-index: 99;
   top: 50%;
-  z-index: 9999;
   font-size: 30px;
   left: 20px;
   display: none !important;
@@ -503,8 +503,8 @@
 
 .body .img .slick-next {
   position: absolute;
+  z-index: 99;
   top: 50%;
-  z-index: 9999;
   font-size: 30px;
   right: 20px;
   display: none !important;
@@ -668,7 +668,6 @@
 }
 
 .body .slick-dots li button {
-  /* border-image-width: auto; */
   border: 3px solid rgba(255, 255, 255, 0.4);
   position: absolute;
   top: 12px;
@@ -990,14 +989,15 @@
 }
 
 .body .product-hot .coffeeandbread .col-md-3 .text-bread {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  /* width: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body .product-hot .coffeeandbread .col-md-3 .text-bread div {
@@ -1168,17 +1168,17 @@
 .body .customer-review .customer-review_child {
   background: black;
   height: 270px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1263,8 +1263,8 @@
 
 .body .somethingabout-coffee .slick-prev {
   position: absolute;
+  z-index: 99;
   top: 50%;
-  z-index: 9999;
   font-size: 30px;
   left: 20px;
   display: none !important;
@@ -1272,8 +1272,8 @@
 
 .body .somethingabout-coffee .slick-next {
   position: absolute;
+  z-index: 99;
   top: 50%;
-  z-index: 9999;
   font-size: 30px;
   right: 20px;
   display: none !important;
@@ -1307,7 +1307,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* justify-content: center; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1417,8 +1416,8 @@
 
 .body .position-coffee .slick-prev {
   position: absolute;
+  z-index: 99;
   top: 50%;
-  z-index: 9999;
   font-size: 30px;
   left: 20px;
   display: none !important;
@@ -1426,8 +1425,8 @@
 
 .body .position-coffee .slick-next {
   position: absolute;
+  z-index: 99;
   top: 50%;
-  z-index: 9999;
   font-size: 30px;
   right: 20px;
   display: none !important;
@@ -1463,7 +1462,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* justify-content: center; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1618,11 +1616,10 @@
 .body .promotional-news .slick-img_news .slick-prev {
   display: block;
   position: absolute;
+  z-index: 99;
   top: 10px;
   color: black;
   display: none !important;
-  z-index: 999;
-  display: block;
   top: 110px;
   width: 44px;
   height: 42px;
@@ -1632,11 +1629,11 @@
 
 .body .promotional-news .slick-img_news .slick-next {
   display: block;
-  position: absolute;
   top: 10px;
   color: black;
   right: 15px;
-  z-index: 999;
+  position: absolute;
+  z-index: 99;
   display: none !important;
   display: block;
   top: 110px;
@@ -1688,8 +1685,8 @@
   width: 40px;
   height: 40px;
   position: absolute;
+  z-index: 99;
   top: 175px;
-  z-index: 11;
   left: 20px;
 }
 
@@ -1699,8 +1696,8 @@
   width: 40px;
   height: 40px;
   position: absolute;
+  z-index: 99;
   top: 176px;
-  z-index: 11;
   right: 20px;
 }
 
@@ -1735,6 +1732,15 @@
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .footer .child-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 425px) {
   .footer .child-footer {
     -webkit-box-orient: vertical;
@@ -1762,6 +1768,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .footer .connect-fanpage,
+  .footer .address,
+  .footer .map {
+    width: 300px;
+    padding-left: 20px;
+  }
 }
 
 .footer .connect-fanpage h5,

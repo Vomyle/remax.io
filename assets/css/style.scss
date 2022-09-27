@@ -1,3 +1,26 @@
+@mixin absolute {
+    position: absolute;
+    z-index: 99;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin white {
+    color: white;
+}
+
+@mixin black {
+    background: black;
+}
+
+@mixin color_black {
+    color: black;
+}
+
 #header {
     @media(max-width: 320px) {
         overflow: hidden;
@@ -7,8 +30,8 @@
         height: 30px;
         align-items: center;
         justify-content: space-between;
-        background: black;
-        color: white;
+        @include black;
+        @include white;
         padding: 0 80px;
         @media(max-width: 425px) {
             padding: 0 33px;
@@ -42,9 +65,7 @@
     }
     .header-bottom {
         z-index: 99999999999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         @media(max-width: 1023px) {
             height: 75px;
         }
@@ -54,29 +75,12 @@
         @media (max-width: 425px) {
             height: 60px;
         }
-        // .close {
-        //     display: none;
-        //     font-size: 25px;
-        //     position: absolute;
-        //     right: 23px;
-        //     top: 13px;
-        //     color: white;
-        //     opacity: 1;
-        //     @media(min-width: 540px) and(max-width: 720px) {
-        //         right: 40px;
-        //     }
-        //     &.active {
-        //         display: flex;
-        //     }
-        // }
         img {
             width: 220px;
             object-fit: contain;
             @media(max-width: 1023px) {
-                position: absolute;
-                z-index: 99;
+                @include absolute;
                 top: 32px;
-                // height: 89px;
             }
         }
         .nav-pc {
@@ -105,17 +109,15 @@
                 &.active {
                     display: flex !important;
                     background: cadetblue;
-                    color: black;
+                    @include color_black;
                 }
                 @media (max-width: 1023px) {
                     position: fixed;
                     top: 30px;
                     left: 0px;
-                    background-color: black;
-                    // left: 20px;
+                    @include black;
                     padding: 76px 41px;
-                    color: white;
-                    // top: -44px;
+                    @include white;
                     z-index: 111;
                     flex-direction: column;
                 }
@@ -173,13 +175,13 @@
                     align-items: center;
                     padding-left: 10px;
                     @media(max-width: 1023px) {
-                        color: black;
+                        @include color_black;
                         font-weight: 600;
                     }
                     .text-img:hover,
                     .text-youtube:hover {
                         background-color: red;
-                        color: white;
+                        @include white;
                     }
                     .library-child {
                         display: none;
@@ -188,7 +190,7 @@
                         margin-bottom: -28px;
                         width: 230px;
                         background: white;
-                        color: black;
+                        @include color_black;
                         height: 70px;
                         div {
                             padding: 7px 12px;
@@ -198,7 +200,7 @@
                 }
                 .library:hover {
                     background: rgb(219, 140, 66);
-                    color: white;
+                    @include white;
                 }
                 .library:hover .library-child {
                     display: block;
@@ -251,9 +253,7 @@
                 position: absolute;
                 top: 0px;
                 right: 23px;
-                align-items: center;
-                display: flex;
-                justify-content: center;
+                @include center;
             }
         }
         position: fixed;
@@ -263,7 +263,6 @@
         transition: transform linear 0.3s;
         background-color: white;
         z-index: 999;
-        // display: none;
         width: 249px;
         max-width: 100%;
         li {
@@ -277,7 +276,7 @@
     }
     #mobile-menu {
         font-size: 20px;
-        color: black;
+        @include color_black;
         display: none;
         position: absolute;
         font-size: 23px;
@@ -288,22 +287,19 @@
         }
     }
     .close {
-        position: absolute;
+        @include absolute;
         top: 0;
         right: 20px;
-        z-index: 99;
         font-size: 30px;
-        color: white;
+        @include white;
         opacity: 1;
     }
     .nav-overlay {
         display: none;
         position: fixed;
-        // display: none;
         top: 0;
         left: 0;
         bottom: 0;
-        // z-index: 99999;
         right: 0;
         background: rgba(0, 0, 0, 0.3);
         animation: fadeIn linear 0.1s;
@@ -313,26 +309,6 @@
         &.active {
             display: flex;
         }
-        // .close {
-        //     cursor: pointer;
-        //     z-index: 99999999999;
-        //     box-shadow: none;
-        //     position: fixed;
-        //     top: 0;
-        //     right: 20px;
-        //     text-align: center;
-        //     color: #fff;
-        //     font-style: normal;
-        //     font-weight: 300;
-        //     // font-size: 40px;
-        //     min-height: 0;
-        //     width: 40px;
-        //     height: 40px;
-        //     line-height: 40px;
-        // }
-        // @media (max-width: 1023px) {
-        //     display: block;
-        // }
     }
 }
 
@@ -363,31 +339,29 @@
     }
     .img {
         .slick-prev {
-            position: absolute;
+            @include absolute;
             top: 50%;
-            z-index: 9999;
             font-size: 30px;
             left: 20px;
             display: none !important;
         }
         .slick-next {
-            position: absolute;
+            @include absolute;
             top: 50%;
-            z-index: 9999;
             font-size: 30px;
             right: 20px;
             display: none !important;
         }
         .slick-next:hover {
             background-color: rgb(204, 173, 70);
-            color: white;
+            @include white;
             i {
                 background-color: rgb(204, 173, 70);
             }
         }
         .slick-prev:hover {
             background-color: rgb(204, 173, 70);
-            color: white;
+            @include white;
             i {
                 background-color: rgb(204, 173, 70);
             }
@@ -403,7 +377,7 @@
                 left: 203px;
                 position: absolute;
                 text-align: center;
-                color: white;
+                @include white;
                 @media(max-width: 768px) {
                     top: 101px;
                     left: 0;
@@ -421,7 +395,7 @@
                         text-align: center;
                     }
                     .btn-seemore {
-                        color: white;
+                        @include white;
                         background: none !important;
                         border: 1px solid white;
                         font-size: 20px;
@@ -438,10 +412,6 @@
                 width: 100%;
                 object-fit: cover;
                 height: 100%;
-                // height: 500px;
-                @media(max-width: 768px) {
-                    // height: inherit;
-                }
             }
             .text-hover_imgsecond {
                 position: absolute;
@@ -460,7 +430,7 @@
                         width: 1009px;
                         strong {
                             font-size: 18px;
-                            color: black;
+                            @include color_black;
                         }
                     }
                 }
@@ -477,7 +447,7 @@
                 strong {
                     font-weight: 700;
                     font-size: 21px;
-                    color: black;
+                    @include color_black;
                 }
             }
         }
@@ -496,18 +466,6 @@
             margin: 20px;
             position: relative;
             button {
-                // position: absolute;
-                // top: 9px;
-                // left: -29px;
-                // background: transparent;
-                // display: block;
-                // height: 20px;
-                // width: 20px;
-                // font-size: 0px;
-                // padding: 5px;
-                // cursor: pointer;
-                // border-radius: 50%;
-                /* border-image-width: auto; */
                 border: 3px solid rgba(255, 255, 255, 0.4);
                 position: absolute;
                 top: 12px;
@@ -532,11 +490,8 @@
         .slick-active {
             background: white !important;
         }
-        // .slick-active li::marker {
-        //     color: #f1f1f1;
-        // }
         .slick-active button:before {
-            color: black;
+            @include color_black;
             opacity: 0.75;
         }
     }
@@ -544,9 +499,7 @@
         .title-becausethecoffeevn {
             text-align: center;
             margin: 30px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             .title {
                 @media(max-width: 768px) {
                     font-size: 15px;
@@ -571,7 +524,7 @@
                     margin-bottom: 41px;
                 }
                 a {
-                    color: black;
+                    @include color_black;
                     font-size: 18px;
                     opacity: 0.7;
                 }
@@ -638,7 +591,7 @@
             @media(max-width: 768px) {
                 flex: 3;
                 font-size: 19px;
-                color: black;
+                @include color_black;
                 opacity: 0.77;
             }
         }
@@ -677,7 +630,7 @@
                     h3 {
                         text-transform: uppercase;
                         font-size: 2em;
-                        color: white;
+                        @include white;
                         @media(max-width: 425px) {
                             font-size: 22px;
                         }
@@ -723,10 +676,7 @@
                     padding: 0;
                 }
                 .text-bread {
-                    justify-content: center;
-                    text-align: center;
-                    /* width: 100%; */
-                    display: flex;
+                    @include center;
                     div {
                         @media(max-width: 768px) {
                             width: 222px;
@@ -734,10 +684,10 @@
                         position: absolute;
                         top: 20px;
                         width: 150px;
-                        color: white;
+                        @include white;
                         a {
                             border: 1px solid white;
-                            color: white;
+                            @include white;
                             text-transform: uppercase;
                             font-weight: 700;
                         }
@@ -764,14 +714,14 @@
                     h3 {
                         text-transform: uppercase;
                         width: 150px;
-                        color: white;
+                        @include white;
                         font-size: 27px;
                         font-weight: 600;
                     }
                     .btn {
                         border: 1px solid white;
                         text-transform: uppercase;
-                        color: white;
+                        @include white;
                         font-weight: 800;
                     }
                 }
@@ -786,14 +736,14 @@
                     h3 {
                         text-transform: uppercase;
                         width: 150px;
-                        color: white;
+                        @include white;
                         font-size: 27px;
                         font-weight: 600;
                     }
                     .btn {
                         border: 1px solid white;
                         text-transform: uppercase;
-                        color: white;
+                        @include white;
                         font-weight: 800;
                     }
                 }
@@ -818,14 +768,14 @@
                     flex-direction: column;
                     h3 {
                         text-transform: uppercase;
-                        color: white;
+                        @include white;
                         font-size: 27px;
                         font-weight: 600;
                     }
                     .btn {
                         border: 1px solid white;
                         text-transform: uppercase;
-                        color: white;
+                        @include white;
                         font-weight: 800;
                     }
                 }
@@ -848,13 +798,11 @@
             }
         }
         .customer-review_child {
-            background: black;
+            @include black;
             height: 270px;
-            justify-content: center;
             text-align: center;
-            display: flex;
             flex-direction: column;
-            align-items: center;
+            @include center;
             p {
                 width: 80%;
             }
@@ -875,10 +823,6 @@
         @media(min-width: 740px) and(max-width: 1023px) {
             padding: 30px 34px;
         }
-        // @media(min-width:540px) and(max-width:720px) {
-        //     text-align: center;
-        //     align-items: center;
-        // }
         @media(max-width:767px) {
             padding: 0;
             display: flex;
@@ -908,31 +852,29 @@
             display: block !important;
         }
         .slick-prev {
-            position: absolute;
+            @include absolute;
             top: 50%;
-            z-index: 9999;
             font-size: 30px;
             left: 20px;
             display: none !important;
         }
         .slick-next {
-            position: absolute;
+            @include absolute;
             top: 50%;
-            z-index: 9999;
             font-size: 30px;
             right: 20px;
             display: none !important;
         }
         .slick-next:hover {
             background-color: rgb(204, 173, 70);
-            color: white;
+            @include white;
             i {
                 background-color: rgb(204, 173, 70);
             }
         }
         .slick-prev:hover {
             background-color: rgb(204, 173, 70);
-            color: white;
+            @include white;
             i {
                 background-color: rgb(204, 173, 70);
             }
@@ -944,7 +886,6 @@
         }
         .title-img_somethingcoffee {
             display: flex;
-            /* justify-content: center; */
             align-items: center;
             .hollow {
                 border-top: 1px solid;
@@ -971,7 +912,7 @@
         a:hover {
             cursor: pointer;
             border: 1px solid rgba(139, 30, 30, 0.651);
-            color: white;
+            @include white;
             background-color: rgba(139, 30, 30, 0.651);
         }
     }
@@ -1012,31 +953,29 @@
             }
         }
         .slick-prev {
-            position: absolute;
+            @include absolute;
             top: 50%;
-            z-index: 9999;
             font-size: 30px;
             left: 20px;
             display: none !important;
         }
         .slick-next {
-            position: absolute;
+            @include absolute;
             top: 50%;
-            z-index: 9999;
             font-size: 30px;
             right: 20px;
             display: none !important;
         }
         .slick-next:hover {
             background-color: rgb(204, 173, 70);
-            color: white;
+            @include white;
             i {
                 background-color: rgb(204, 173, 70);
             }
         }
         .slick-prev:hover {
             background-color: rgb(204, 173, 70);
-            color: white;
+            @include white;
             i {
                 background-color: rgb(204, 173, 70);
             }
@@ -1049,7 +988,6 @@
         }
         .title-img_somethingcoffee {
             display: flex;
-            /* justify-content: center; */
             align-items: center;
             .hollow {
                 border-top: 1px solid;
@@ -1098,7 +1036,7 @@
             top: 50%;
             left: 50%;
             font-size: 41px;
-            color: white;
+            @include white;
         }
         i:hover {
             color: #e4c307;
@@ -1116,11 +1054,8 @@
         }
     }
     .promotional-news {
-        // padding: 0 105px;
         .title-promotional_news {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             text-align: center;
             margin: 30px 0;
             padding: 0 12px;
@@ -1156,12 +1091,10 @@
             }
             .slick-prev {
                 display: block;
-                position: absolute;
+                @include absolute;
                 top: 10px;
-                color: black;
+                @include color_black;
                 display: none !important;
-                z-index: 999;
-                display: block;
                 top: 110px;
                 width: 44px;
                 height: 42px;
@@ -1170,11 +1103,10 @@
             }
             .slick-next {
                 display: block;
-                position: absolute;
                 top: 10px;
-                color: black;
+                @include color_black;
                 right: 15px;
-                z-index: 999;
+                @include absolute;
                 display: none !important;
                 display: block;
                 top: 110px;
@@ -1201,7 +1133,6 @@
             }
         }
         .slick-img_newsmobile {
-            // display: none !important;
             padding: 0 20px;
             @media(max-width: 849px) {
                 display: block !important;
@@ -1214,9 +1145,8 @@
                 border-radius: 50%;
                 width: 40px;
                 height: 40px;
-                position: absolute;
+                @include absolute;
                 top: 175px;
-                z-index: 11;
                 left: 20px;
             }
             .slick-next {
@@ -1224,13 +1154,11 @@
                 border-radius: 50%;
                 width: 40px;
                 height: 40px;
-                position: absolute;
+                @include absolute;
                 top: 176px;
-                z-index: 11;
                 right: 20px;
             }
             img {
-                // height: 500px;
                 width: 100%;
                 object-fit: contain;
             }
@@ -1253,6 +1181,9 @@
         @media (min-width:400px) and (max-width:768px) {
             padding: 0;
         }
+        @media(min-width: 426px)and (max-width:768px) {
+            flex-direction: column;
+        }
         @media(max-width:425px) {
             flex-direction: column;
             padding: 0 20px;
@@ -1265,13 +1196,15 @@
     .address,
     .map {
         flex: 1;
-        // text-align: center;
-        // align-items: center;
+        @media(min-width: 426px)and (max-width: 768px) {
+            width: 300px;
+            padding-left: 20px;
+        }
         display: flex;
         flex-direction: column;
         h5 {
             text-transform: uppercase;
-            color: white;
+            @include white;
             font-weight: 700;
             font-size: 17px;
         }
@@ -1308,7 +1241,7 @@
             position: absolute;
             top: 7px;
             left: 13px;
-            color: white;
+            @include white;
             display: flex;
         }
     }
