@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai tap js 8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="baitap5.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-top">
+            <!-- contact information: thông tin liên hệ -->
+            <div class="header-top_contactinformation">
+                <div class="hotline">Hotline: 0779468946</div>
+                <div class="email">Email: info@coffeevn.com</div>
+            </div>
+            <div class="header-top_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <!-- <i class="close fa-solid fa-xmark"></i> -->
+            <img src="assets/img/logo1.png" alt="">
+            <ul class="nav-pc">
+                <i id="mobile-menu" class="fa-solid fa-bars"></i>
+                <!-- Table of contents:mục lục -->
+
+                <div class="bar">
+                    <li>
+                        <div class="table-of_content"> trang chủ</div>
+                    </li>
+                    <li>
+                        <div class="table-of_content introduce"> giới thiệu
+                            <!-- labrary: thư viện -->
+                            <div class="library">thư viện
+                                <div class="library-child">
+                                    <div class="text-img">hình ảnh</div>
+                                    <div class="text-youtube">video</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="border-bottom:2px solid gold" class="table-of_content">menu</div>
+                    </li>
+                    <li>
+                        <div class="table-of_content">khuyến mãi</div>
+                    </li>
+                    <li>
+                        <div class="table-of_content">tuyển dụng</div>
+                    </li>
+                    <li>
+                        <!-- job story:chuyện nghề -->
+                        <div class="table-of_content job-story">chuyện nghề
+                            <div class="library">hướng dẫn</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="table-of_content">chuyện hot</div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- <div class="hollow"></div> -->
+        <input type="checkbox" hidden name="" class="nav-input" id="nav-input">
+        <label for="nav-input" class="nav">                <i id="mobile-menu" class="fa-solid fa-bars"></i>
+            </label>
+        <label for="nav-input" class="nav-overlay">
+             
+                    <i class="close fa-solid fa-xmark"></i>
+                    
+            </label>
+
+        <ul class="nav_mobile">
+            <div>
+                <div id="input-search">
+                    <input type="text" placeholder="Tìm kiếm.....">
+
+
+                    <i class="search fas fa-search"></i>
+                </div>
+            </div>
+            <div class="bar">
+                <li>
+                    <div class="table-of_content"> trang chủ</div>
+                </li>
+                <li>
+                    <div class="table-of_content introduce"> giới thiệu
+                        <!-- labrary: thư viện -->
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="table-of_content">menu</div>
+                </li>
+                <li>
+                    <div class="table-of_content">khuyến mãi</div>
+                </li>
+                <li>
+                    <div class="table-of_content">tuyển dụng</div>
+                </li>
+                <li>
+                    <!-- job story:chuyện nghề -->
+                    <div class="table-of_content job-story">chuyện nghề
+                    </div>
+                </li class="table-of_content">
+                <li>
+                    <div class="library">sản phẩm hot</div>
+
+                </li>
+                <li>
+                    <div class="table-of_content">đăng nhập</div>
+                </li>
+            </div>
+        </ul>
+        <!-- Table of contents:mục lục -->
+
+
+
+    </div>
+    <div class="hollow">
+
+    </div>
+    <div id="body">
+        <div class="menuanddrink-list">
+            <div class="menu">
+                <div class="menu-child">
+                    <h1 class="svn_font">Menu</h1>
+                    <div>
+                        <div>
+                            <button id="cofe" class="active">
+            <a  class="coffee drink" href="#">A.Espresso Classic coffee</a></li>
+         </button>
+                        </div>
+                        <div>
+                            <button id="special"><a class="drink " href="#">B.Special Tea</a></button>
+
+                        </div>
+                        <div>
+                            <button id="ice"><a class="drink " href="#">D.Ice Blended</a></button>
+
+                        </div>
+                        <div>
+                            <button id="fresh"><a class="drink" href="#">E.Fresh Juice &amp; Fruit Smoothies</a></button>
+
+                        </div>
+                        <div>
+                            <button id="cookie"><a class="drink " href="#">F.Cookie</a></button>
+
+                        </div>
+                        <div>
+                            <button id="hot"><a class="drink" href="#">F.Hot Tea Soul</a></button>
+
+                        </div>
+                        <div>
+                            <button id="food"><a class="drink" href="#">G.Food</a></button>
+
+                        </div>
+                        <div>
+                            <button id="ice-cream"><a class="drink" href="#">Ice Cream</a></button>
+
+                        </div>
+                        <div>
+                            <button id="other"><a class="drink" href="#">Other</a></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drink-list">
+                <div class="address">
+                    <button>GIAO NGAY</button>
+                    <div class="address_row">
+                        <input type="text" placeholder="Nhập địa chỉ giao hàng" name="" id=""> <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+
+                </div>
+                <div class="search-product">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="classic-coffee">
+                    <span>A.ASPRESSO CLASSIC COFFEE</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-cafe-da-grab-1536x1536.jpg" alt="">
+                            <span>Espresso</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/cfs-1536x1536.png" alt="">
+                            <span>Espresso Milk</span>
+                        </div>
+
+
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-bac-xiu-grab-1536x1536.jpg" alt="">
+                            <span>Bạc Xỉu</span>
+                        </div>
+
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-ame-grab-1536x1536.jpg" alt="">
+                            <span>Americano</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-capu-latte-grab-1536x1536.jpg" alt="">
+                            <span>Capuccino</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+30.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-capu-latte-grab-1536x1536.jpg" alt="">
+                            <span>Cafe Late</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/so-1536x1536.jpg" alt="">
+                            <span>Chocolate</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+45.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="classic-coffee special-tea">
+                    <span>B.SPECIAL TEA</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hongtrasua-1536x1536.jpg" alt="">
+                            <span>Hồng trà sữa (Black Milk Tea)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hongtrasua-1536x1536.jpg" alt="">
+                            <span>Trà Oolong sữa(Oolong Milk Tea)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hongtrasua-1536x1536.jpg" alt="">
+                            <span>Trà Đào Sữa(Peach Milk Tea)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/tra-dai-1536x1536.jpg" alt="">
+                            <span>Trà Đào Hàn Quốc(Korea Peach Tea)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/lemongrass-grab-1536x1536.jpg" alt="">
+                            <span>Trà Chanh Sả Mật Ong(Lemongrass Tea)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+30.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/latte-tx-1536x1536.jpg" alt="">
+                            <span>Trà Chanh Latte(Green Tea Latte)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/chia-1536x1536.jpg" alt="">
+                            <span>Trà Vải Hạt Chia(Lychee Tea With Chia Seed)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+45.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/tra-sen-thach-grab-1536x1536.jpg" alt="">
+                            <span>Trà Hạt Sen Thạch(Lotus Jelly Tea)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+45.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="classic-coffee">
+                    <span>D.ICE BLENDED</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/capucino-1536x1536.jpg" alt="">
+                            <span>Cappuccino Blended</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/capucino-1536x1536.jpg" alt="">
+                            <span>Caramel Cappuccino</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-csasdasafe-grab-1536x1536.jpg" alt="">
+                            <span>Kẹo Marshmallow & Socola(Marshmallow Chocolate)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/cofemint-1536x1536.jpg" alt="">
+                            <span>Cookie Coffee Mint</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/hinh-cafe-grab-scaled.jpg" alt="">
+                            <span>Matcha Blended</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+30.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="classic-coffee">
+                    <span>E.FRESH JUICE & FRUIT SMOOTHIES</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/download.jpeg" alt="">
+                            <span>Dừa Xiêm</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Cam-ép.png" alt="">
+                            <span>Cam ép (Orange)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Bưởi-ép.png" alt="">
+                            <span>Bưởi ép (Pomelo)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Táo-ép.png" alt="">
+                            <span>Táo ép (Apple)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/sinh-tố-Xoài.png" alt="">
+                            <span>Sinh tố Xoài (Mango Smoothies)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+30.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="classic-coffee">
+                    <span>F.COOKIE</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/6dd2a4459ccd789321dc.png" alt="">
+                            <span>Trà Xanh Teabreak</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/a14a47c3704b9415cd5a.png" alt="">
+                            <span>Tiramisu Pas Teabreak</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Corn-Gateaux.png" alt="">
+                            <span>Corn Gateaux</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Flan-Caramel.png" alt="">
+                            <span> Flan Gateau</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Chocolate-Cake.png" alt="">
+                            <span>L’Opera</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+30.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="classic-coffee">
+                    <span>F.HOT TEA SOUL</span>
+                    <div class="coffee-price">
+                        <div class="text_tea">
+                            <img src="assets/img/trà-ô-long.png" alt="">
+                            <div class="text">
+                                <span>Trà oolong (Oolong Tea)</span>
+                                <div>* Phục vụ trong ấm trà kèm bánh mứt</div>
+                                <div>* Sản phẩm được pha trong ấm trà ,để tăng hương vị và giá trị thưởng thức , chúng tôi rất mong được phục vụ bạn tại quán.</div>
+                            </div>
+                        </div>
+
+                        <span style="color: black;">+40.000</span>
+                        <i style="font-size:24px" class="fa">&#xf0fe;</i>
+
+                    </div>
+                    <div class="coffee-price">
+                        <div class="text_tea">
+                            <img src="assets/img/trà-Sen.png" alt="">
+                            <div class="text">
+                                <span>Trà Sen(Lotus Tea)</span>
+                                <div>* Phục vụ trong ấm trà kèm bánh mứt</div>
+                                <div>* Sản phẩm được pha trong ấm trà ,để tăng hương vị và giá trị thưởng thức , chúng tôi rất mong được phục vụ bạn tại quán.</div>
+                            </div>
+                        </div>
+
+                        <span style="color: black;">+35.000</span>
+                        <i style="font-size:24px" class="fa">&#xf0fe;</i>
+
+                    </div>
+                    <div class="coffee-price">
+                        <div class="text_tea">
+                            <img src="assets/img/trà-Hoa-Cúc.png" alt="">
+                            <div class="text">
+                                <span>Trà Hoa Cúc(Chamomile Tea)</span>
+                                <div>* Phục vụ trong ấm trà kèm bánh mứt</div>
+                                <div>* Sản phẩm được pha trong ấm trà ,để tăng hương vị và giá trị thưởng thức , chúng tôi rất mong được phục vụ bạn tại quán.</div>
+                            </div>
+                        </div>
+
+                        <span style="color: black;">+35.000</span>
+                        <i style="font-size:24px" class="fa">&#xf0fe;</i>
+
+                    </div>
+                    <div class="coffee-price">
+                        <div class="text_tea">
+                            <img src="assets/img/trà-Gừng.png" alt="">
+                            <div class="text">
+                                <span>Trà Gừng(Ginger Tea)</span>
+                                <div>* Phục vụ trong ấm trà kèm bánh mứt</div>
+                                <div>* Sản phẩm được pha trong ấm trà ,để tăng hương vị và giá trị thưởng thức , chúng tôi rất mong được phục vụ bạn tại quán.</div>
+                            </div>
+                        </div>
+
+                        <span style="color: black;">+50.000</span>
+                        <i style="font-size:24px" class="fa">&#xf0fe;</i>
+
+                    </div>
+
+
+                </div>
+                <div class="classic-coffee">
+                    <span>G.FOOD</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/sandwich-1536x1536.jpg" alt="">
+                            <span>Grilled Cheese Sandwich</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/xiu-mai-768x768.jpg" alt="">
+                            <span>Bánh Mì Xíu Mại</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/bo-kho-banh-mi-768x768.jpg" alt="">
+                            <span>Mì Bò Kho</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/bo-kho-banh-mi-768x768.jpg" alt="">
+                            <span> Bánh Mì Bò Kho</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/mi-y-768x768.jpg" alt="">
+                            <span>Spaghetti The Coffee VM</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+30.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="classic-coffee">
+                    <span>ICE CREAM</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/kem-768x768.jpg" alt="">
+                            <span>Hương Vani(Vani flavor)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/kem-768x768.jpg" alt="">
+                            <span>Hương socolo(Chocolate flavor)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/kem-768x768.jpg" alt="">
+                            <span>Hương dâu(Strawberry flavor)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+35.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/kem-768x768.jpg" alt="">
+                            <span>Hương dừa(Coconut flavor)</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+50.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="classic-coffee">
+                    <span>OTHER</span>
+                    <div class="coffee-price">
+                        <div>
+                            <img src="assets/img/Nước-suối-768x768.png" alt="">
+                            <span>Nước khoáng</span>
+                        </div>
+                        <div>
+                            <span style="color: black;">+40.000</span>
+                            <i style="font-size:24px" class="fa">&#xf0fe;</i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="hollow" style="border-bottom: 1px solid black;
+        margin: 14px 0 65px 0;"></div>
+            </div>
+        </div>
+
+        <!-- pay:thanh toán -->
+        <div class="pay">
+            <div id="pay-child">
+                <div class="text">
+                    <span>Cộng(0 món)</span><span>0đ</span>
+                </div>
+                <div class="hollow"></div>
+                <div class="discount">
+                    <input type="text" placeholder="Nhập mã giảm giá">
+                    <button>Áp dụng</button>
+                </div>
+                <div class="hollow" style="    margin: 15px 10px 10px;"></div>
+                <div class="text"><span style="font-weight: 600">
+                    Tổng cộng
+                </span>
+                    <span>0đ</span>
+                </div>
+                <div class="view-cart">
+                    <button>Xem giỏ hàng</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="hollow"></div>
+    </div>
+    <div class="footer" style=>
+        <div class="child-footer">
+            <div class="connect-fanpage">
+                <h5>kết nối fanpage</h5>
+                <div class="hollow"></div>
+                <div style="position: relative;">
+                    <img src="assets/img/chantrang.jpg" alt="" class="img-footer">
+                    <div class="text-connect_fanpage">
+                        <img src="assets/img/logochantrang.jpg" alt="">
+                        <div>
+                            <div>the coffee.vn</div>
+                            <div>3.730 lượt thích</div>
+                        </div>
+                    </div>
+                    <button><i class="fa-brands fa-facebook-square"></i> Thích Trang</button>
+                </div>
+            </div>
+            <div class="address">
+                <h5>địa chỉ liên hệ</h5>
+                <div class="hollow"></div>
+                <div style="color: white;
+                font-size: 18px;"><strong style="text-transform:uppercase">địa chỉ: </strong>34-36 Vũ Tông Phan, An Phú, quận 2,TPHCM</div>
+                <div><strong style="text-transform:uppercase; color: white;">hotline: </strong>
+                    <a href="tel:039 9999 789" type="tel" style="color: white;">039 9999 789</a>
+                </div>
+                <div style="color: white;
+                font-size: 18px;"><strong style="  text-transform:uppercase">Email: </strong>info@thecoffevn.com</div>
+            </div>
+            <div class="map">
+                <h5>bản đồ</h5>
+                <div class="hollow"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.004192365782!2d106.66500641428672!3d10.734159562908856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e4fabf2626b%3A0x456ad6f2f684de59!2zMTEwNyBQaOG6oW0gVGjhur8gSGnhu4NuLCBQaMaw4budbmcgNSwgUXXhuq1uIDgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1649579239073!5m2!1svi!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <script>
+        var cofe = document.getElementById("cofe");
+        var special = document.getElementById("special")
+        var ice = document.getElementById("ice");
+        var fresh = document.getElementById("fresh")
+        var cookie = document.getElementById("cookie")
+        var hot = document.getElementById("hot")
+        var food = document.getElementById("food")
+        var ice_cream = document.getElementById("ice-cream")
+        var other = document.getElementById("other");
+
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+
+                if ($(this).scrollTop() < 900) {
+
+                    cofe.classList.add("active")
+                } else
+                    cofe.classList.remove("active")
+                if ($(this).scrollTop() > 100) {
+                    $('.menu-child').css({
+                        "top": 78
+                    })
+                } else
+                    $('.menu-child').css({
+                        "top": 226
+                    })
+                if ($(this).scrollTop() > 4050) {
+                    $('.menu-child').css({
+
+                        "top": -212
+                    })
+                }
+                if ($(this).scrollTop() > 200) {
+                    $('#pay-child').css({
+                        "top": 84,
+                        "right": 20
+                    })
+                } else {
+                    $('#pay-child').css({
+                        "top": 230,
+                        "right": 20
+
+                    })
+                }
+                if ($(this).scrollTop() > 100) {
+                    $('.header-bottom').css({
+
+                        "position": "fixed",
+                        "background": "white",
+                        "top": 0,
+                        "height": 85
+                    })
+                } else
+                    $('.header-bottom').css({
+
+                        "position": "relative",
+                        "background": "white",
+                        "top": 0,
+                        "height": 85
+                    })
+                if ($(this).scrollTop() >= 900) {
+                    special.classList.add("active")
+                } else
+                    special.classList.remove("active")
+
+                if ($(this).scrollTop() >= 1490) {
+                    ice.classList.add("active");
+                    special.classList.remove("active")
+
+                } else
+                    ice.classList.remove("active");
+                if ($(this).scrollTop() > 1900) {
+                    fresh.classList.add("active")
+                    ice.classList.remove("active");
+
+                } else
+                    fresh.classList.remove("active");
+                if ($(this).scrollTop() > 2300) {
+                    cookie.classList.add("active")
+                    fresh.classList.remove("active");
+
+                } else
+                    cookie.classList.remove("active")
+
+                if ($(this).scrollTop() > 2650) {
+                    hot.classList.add("active");
+                    cookie.classList.remove("active")
+
+                } else
+                    hot.classList.remove("active")
+                if ($(this).scrollTop() > 3100) {
+                    food.classList.add("active");
+                    hot.classList.remove("active")
+
+                } else
+                    food.classList.remove("active");
+                if ($(this).scrollTop() > 3550) {
+                    ice_cream.classList.add("active");
+                    food.classList.remove("active")
+
+                } else
+                    ice_cream.classList.remove("active");
+                if ($(this).scrollTop() > 3900) {
+                    other.classList.add("active");
+                    ice_cream.classList.remove("active")
+
+                } else
+                    other.classList.remove("active");
+
+            });
+        });
+    </script>
+</body>
+
+</html>
