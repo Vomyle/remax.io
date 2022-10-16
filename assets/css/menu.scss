@@ -161,6 +161,12 @@
                 }
                 .table-of_content {
                     position: relative;
+                    a {
+                        color: black;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
                 }
                 .introduce:hover .library {
                     display: flex;

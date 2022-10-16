@@ -233,6 +233,14 @@
   position: relative;
 }
 
+#header .header-bottom ul li .table-of_content a {
+  color: black;
+}
+
+#header .header-bottom ul li .table-of_content a:hover {
+  text-decoration: none;
+}
+
 #header .header-bottom ul li .introduce:hover .library {
   display: -webkit-box;
   display: -ms-flexbox;
