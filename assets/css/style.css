@@ -220,7 +220,7 @@
 }
 
 #header .header-bottom ul li .table-of_content a {
-  color: black;
+  color: black !important;
 }
 
 #header .header-bottom ul li .table-of_content a:hover {
